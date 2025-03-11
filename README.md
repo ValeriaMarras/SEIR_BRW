@@ -28,9 +28,9 @@ The project includes two main stages:
 
 ## File Structure
 
-- **simulation.py**: Generates stochastic SEIR simulations and stores results in simulations_data/.
+- **simulation.ipynb**: Generates stochastic SEIR simulations and stores results in simulations_data/.
 
-- **validation.py**: Validates simulation results, computes forecast quantiles and median forecasts, creates plots, and outputs CSV files for submission.
+- **validation.ipynb**: Validates simulation results, computes forecast quantiles and median forecasts, creates plots, and outputs CSV files for submission.
 
 - **population_data.csv**: Contains country populations (Country_Code, Population).
 
@@ -42,13 +42,13 @@ The project includes two main stages:
 
 ### 1. Generating Simulations
 
-Run `dataset_generation.py` to download snapshot files, calculate revision metrics like revision status and data age, and save the processed dataset.
+Run `dataset_generation.ipynb` to download snapshot files, calculate revision metrics like revision status and data age, and save the processed dataset.
 
-Run `simulation.py`: simulations will be saved in the `simulations_data/` folder.
+Run `simulation.ipynb`: simulations will be saved in the `simulations_data/` folder.
 
 ### 2. Validation and Forecast Generation
 
-After simulations are generated, run the `validation.py` script to:
+After simulations are generated, run the `validation.ipynb` script to:
 
 - Select the top 100 simulations based on MAPE.
 
