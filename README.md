@@ -10,7 +10,6 @@ This repository is dedicated to the generation and validation of forecasts using
 - [Usage](#usage)
   - [1. Generating Simulations](#1-generating-simulations)
   - [2. Validation and Forecast Generation](#2-validation-and-forecast-generation)
-- [Configuration](#configuration)
 - [License](#license)
 - [Sources](#sources)
 
