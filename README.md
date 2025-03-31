@@ -9,7 +9,7 @@ This repository is dedicated to the generation and validation of forecasts using
 - [File Structure](#file-structure)
 - [Usage](#usage)
   - [1. Generating Simulations](#1-generating-simulations)
-  - [2. Validation and Forecast Generation](#2-validation-and-forecast-generation)
+  - [2. Calibration and Forecast Generation](#2-validation-and-forecast-generation)
 - [Sources](#sources)
 
 ## Overview
@@ -44,7 +44,7 @@ Run `dataset_generation.ipynb` to download snapshot files, calculate revision me
 
 Run `simulation.ipynb`: simulations will be saved in the `simulations_data/` folder.
 
-### 2. Validation and Forecast Generation
+### 2. Calibration and Forecast Generation
 
 After simulations are generated, run the `calibration.ipynb` script to:
 
