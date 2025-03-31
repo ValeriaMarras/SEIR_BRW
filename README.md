@@ -10,7 +10,6 @@ This repository is dedicated to the generation and validation of forecasts using
 - [Usage](#usage)
   - [1. Generating Simulations](#1-generating-simulations)
   - [2. Validation and Forecast Generation](#2-validation-and-forecast-generation)
-- [License](#license)
 - [Sources](#sources)
 
 ## Overview
@@ -19,7 +18,7 @@ The project includes two main stages:
 
 1. Simulation Generation: Generating stochastic SEIR simulations with a beta parameter evolving according to a random walk.
 
-2. Forecast Validation and Dataset Generation: Selecting the top 100 simulations based on MAPE (Mean Absolute Percentage Error) of observed data, and using these simulations to generate median forecasts and quantiles for submission.
+2. Forecast Calibration and Dataset Generation: Selecting the top 100 simulations based on MAPE (Mean Absolute Percentage Error) of observed data, and using these simulations to generate median forecasts and quantiles for submission.
 
 ## Prerequisites
 
@@ -29,7 +28,7 @@ The project includes two main stages:
 
 - **simulation.ipynb**: Generates stochastic SEIR simulations and stores results in simulations_data/.
 
-- **validation.ipynb**: Validates simulation results, computes forecast quantiles and median forecasts, creates plots, and outputs CSV files for submission.
+- **calibration.ipynb**: Validates simulation results, computes forecast quantiles and median forecasts, creates plots, and outputs CSV files for submission.
 
 - **population_data.csv**: Contains country populations (Country_Code, Population).
 
@@ -47,7 +46,7 @@ Run `simulation.ipynb`: simulations will be saved in the `simulations_data/` fol
 
 ### 2. Validation and Forecast Generation
 
-After simulations are generated, run the `validation.ipynb` script to:
+After simulations are generated, run the `calibration.ipynb` script to:
 
 - Select the top 100 simulations based on MAPE.
 
@@ -60,9 +59,6 @@ CSV output files follow this naming convention:
 ```bash
 YYYY-MM-DD-ISI-SEIR_BRW_COVID_{country}.csv
 ```
-
-
-## License
 
 ## Sources
 
